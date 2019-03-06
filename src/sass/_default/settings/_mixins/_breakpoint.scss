@@ -1,0 +1,93 @@
+// main: mixins.scss
+
+// Media queries
+$bps: (
+  'small': 425px,
+  'medium': 735px,
+  'middle': 1024px,
+	'large': 1200px,
+	'laptop': 1200px,
+  ) !default;
+
+$deviceList: (
+  'laptop': (min: '1200px',	max: '1600px',	pixelRatio: '1'),
+  'iphone4': (min: '320px',	max: '480px',	pixelRatio: '2'),
+  'iphone5': (min: '320px',	max: '568px',	pixelRatio: '2'),
+  'iphone6': (min: '375px',	max: '667px',	pixelRatio: '2'),
+  'iphone7': (min: '375px',	max: '667px',	pixelRatio: '2'),
+  'iphone8': (min: '375px',	max: '667px',	pixelRatio: '2'),
+	'iphoneX': (min: '375px',	max: '812px',	pixelRatio: '3'),
+	'iphone6plus': (min: '414px',	max: '736px',	pixelRatio: '3'),
+	'iphone7plus': (min: '414px',	max: '736px',	pixelRatio: '3'),
+  'iphone8plus': (min: '414px',	max: '736px',	pixelRatio: '3'),
+  );
+
+
+@mixin media($media) {
+  @if map-has-key($bps, $media) {
+    @media (max-width: map-get($bps, $media)) {
+      @content;
+    }
+  }
+}
+
+@mixin medias($media) {
+  @if map-has-key($bps, $media) {
+    @media (max-width: map-get($bps, $media)) {
+      @content;
+    }
+  }
+}
+
+@mixin viewport($media) {
+  @if map-has-key($bps, $media) {
+    @media (max-width: map-get($bps, $media)) {
+      @content;
+    }
+  }
+}
+
+@mixin device($devicer, $orientation: 'undefined') {
+	@if map-has-key($deviceList, $devicer) {
+		$min: map-get(map-get($deviceList, $devicer), min);
+		$max: map-get(map-get($deviceList, $devicer), max);
+		$ratio: map-get(map-get($deviceList, $devicer), pixelRatio);
+
+		@if ($orientation != 'undefined') {
+			@media only screen and (min-device-width: $min) and (max-device-width: $max) and (-webkit-min-device-pixel-ratio: $ratio) and (orientation: $orientation) {
+				@content;
+			}
+		}
+
+		@if ($orientation == 'undefined') {
+			@media only screen and (min-device-width: $min) and (max-device-width: $max) and (-webkit-min-device-pixel-ratio: $ratio) {
+				content: $orientation;
+				@content;
+			}
+		}
+	}
+}
+
+// For default px sizes
+
+@mixin max-min($ele...) {
+    $length: length($ele);
+
+    @if $length == 1 {
+      $one: nth(nth($ele, 1), 1);
+      $two: nth(nth($ele, 1), 2);
+      @media only screen and (#{$one}-width: $two) {
+        @content
+      }
+    } @else if $length == 2 {
+      $max: nth(nth($ele, 1), 1);
+      $max-size: nth(nth($ele, 1), 2);
+
+      $min: nth(nth($ele, 2), 1);
+      $min-size: nth(nth($ele, 2), 2);
+
+      @media only screen and (#{$max}-width: $max-size) and (#{$min}-width: $min-size) {
+        @content
+      }
+    }
+}

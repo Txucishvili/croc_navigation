@@ -1,0 +1,67 @@
+// main: mixins.scss
+
+$font-default-path: "../sets/fonts/";
+
+@mixin font-face(
+			$font-name,
+			$font-nameer,
+			$font-path,
+			$font-style: normal,
+			$font-weight: 400,
+			$font-type: type pseudo-class variable,
+			$font-formats: eot otf woff2 woff ttf svg) {
+
+	 @if $font-style == default or $font-style == style or $font-style == null {
+		$font-style: normal;
+	}
+	@else if $font-weight == default or $font-weight == null {
+		$font-weight: 400;
+	}
+
+	@font-face {
+		font-family: $font-nameer;
+		font-style: $font-style;
+		font-weight: $font-weight;
+		src: font-src(
+									$font-name,
+									$font-path,
+									$font-formats);
+	}
+
+	// Setting up the font-icon types
+	$font-types: nth($font-type, 1);
+
+	@if $font-types == icon or $font-types == font-icon {
+		$font-icon-name: nth($font-type, 2);
+		$font-icon-var: nth($font-type, 3);
+
+		[class*="#{$font-icon-name}"],
+		[class^="#{$font-icon-name}"] {
+			font-family: $font-nameer !important;
+			speak: none;
+			font-style: $font-style;
+			font-weight: $font-weight;
+			font-variant: normal;
+			text-transform: none;
+			line-height: 1;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+
+			@content;
+		}
+		@each $name,$content in $font-icon-var {
+			$before: map-get($content, before);
+			$after: map-get($content, after);
+
+			.#{$font-icon-name}-#{$name} {
+				&:before {
+					content: $before;
+				}
+
+				&:after {
+					content: $after;
+				}
+			}
+		}
+	}
+}

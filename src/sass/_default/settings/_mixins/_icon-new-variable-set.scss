@@ -1,0 +1,23 @@
+// main: mixins.scss
+
+@mixin new-icon-variable(
+					$pseudo-class,
+					$icon-set-var: icons
+				) {
+
+
+		@each $name,$content in $icon-set-var {
+			$before: map-get($content, before);
+			$after: map-get($content, after);
+
+			.#{$pseudo-class}-#{$name} {
+				&:before {
+					content: $before;
+				}
+
+				&:after {
+					content: $after;
+				}
+			}
+		}
+}

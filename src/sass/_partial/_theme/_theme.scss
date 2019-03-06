@@ -1,0 +1,14 @@
+// main: ../style.scss
+
+// Setup
+@import "setup"; 		// (setup options)
+
+// Edit reset settings by default
+@import "reset"; 		//
+
+// Displays partails
+// @import "display";
+
+// themes partails
+@import "classes";
+@import "main";

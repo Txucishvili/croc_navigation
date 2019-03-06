@@ -1,0 +1,34 @@
+// main: functions.scss
+
+
+@function font-src(
+			$font-name,
+			$font-path,
+			$file-formats) {
+
+	$src: ();
+
+	@if $font-path == default or $font-path == path or $font-path == null {
+		$font-path: $font-default-path;
+	}
+
+	$format-map: (
+				eot: 		"#{$font-path}#{$font-name}.eot#iefix" format('embedded-opentype'),
+				otf: 		"#{$font-path}#{$font-name}.otf" format('opentype'),
+				woff2: 	"#{$font-path}#{$font-name}.woff2" format('woff2'),
+				woff: 	"#{$font-path}#{$font-name}.woff" format('woff'),
+				ttf: 		"#{$font-path}#{$font-name}.ttf" format('truetype'),
+				svg: 		"#{$font-path}#{$font-name}.svg##{$font-name}" format('svg'),
+	);
+
+
+	@each $keys, $values in $format-map {
+		 @if contains($file-formats, $keys){
+			$font-path: nth($values, 1);
+			$font-format: nth($values, 2);
+			$src: append($src, url($font-path) $font-format, comma);
+		}
+	}
+
+	@return $src;
+}

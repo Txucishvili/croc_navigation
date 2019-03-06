@@ -1,0 +1,116 @@
+.app {
+  .navigation {
+    list-style: none;
+    max-width: 350px;
+
+    li, .mainNavigation {
+      cursor: pointer;
+
+      > ul {
+        display: none;
+      }
+
+      .name {
+        padding: 10px 20px;
+        color: $oc-white;
+        font-size: em(13);
+        border-bottom: 1px solid rgba($oc-black, .35);
+        @include flex;
+        @include justify-content(space-between);
+        transition: all .125s ease-in-out;
+        white-space: nowrap;
+        height: 40px;
+
+        b {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          @include flex-all;
+        }
+
+        .count {
+          margin-left: 10px;
+          border-radius: 25px;
+          background-color: rgba($color-dark-green-2, .3);
+          padding: 3px 7px;
+          font-size: em(14);
+
+          &:before {
+            content: '+';
+            display: inline-block;
+            margin-right: 4px;
+          }
+        }
+
+        &:hover {
+          .count {
+            background-color: lighten($color-light-green, 5.7%);
+          }
+
+          background-color: lighten($color-light-green, 5.7%);
+        }
+      }
+
+      &:last-child {
+        .name {
+          border-bottom: none;
+        }
+      }
+
+      &.scope-1 {
+        > .name {
+          background-color: $color-dark-green;
+
+          &:hover {
+            background-color: lighten($color-light-green, 2.7%);
+          }
+        }
+        &.active {
+          > .name {
+            background-color: lighten($color-light-green, 2.7%);
+          }
+        }
+      }
+
+      &.scope-2 {
+        .name {
+          background-color: $color-light-green;
+
+          &:hover {
+            .count {
+              background-color: lighten($color-light-green, 5.7%);
+            }
+
+            background-color: lighten($color-light-green, 5.7%);
+          }
+        }
+      }
+
+      &.scope-3 {
+        .name {
+          background-color: $color-dark-green-2;
+
+          &:hover {
+            .count {
+              background-color: lighten($color-light-green, 5.7%);
+            }
+
+            background-color: lighten($color-light-green, 5.7%);
+          }
+        }
+      }
+
+      &.active {
+        > ul {
+        }
+       > .name {
+          .count {
+            &:before {
+              content: '-';
+            }
+          }
+        }
+      }
+    }
+  }
+}

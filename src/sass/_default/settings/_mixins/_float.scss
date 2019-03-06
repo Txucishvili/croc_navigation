@@ -1,0 +1,16 @@
+// main: mixins.scss
+
+// Clearfix
+@mixin clearfix {
+	&:after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+}
+
+// Left and Right mixin
+
+@mixin float($value) {
+	float: $value;
+}

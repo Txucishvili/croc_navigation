@@ -1,0 +1,33 @@
+// main: ../../style.scss
+
+// FontName import
+// $FontName-Regular: 'FontName-Regular';
+// $FontName-Bold: 'FontName-Bold';
+// $FontName-Light: 'FontName-Light';
+//
+// $FontName-path: "../sets/fonts/FontName/";
+
+// @include font-face($FontName-Regular, $FontName-path, normal, 400, no-icon, eot ttf svg);
+// @include font-face($FontName-Bold, $FontName-path, normal, 400, no-icon, eot ttf svg);
+// @include font-face($FontName-Light, $FontName-path, normal, 400, no-icon, eot ttf svg);
+// ---
+
+// FontName import
+// $FontName: 'FontName';
+//
+// $FontName-path: "../sets/fonts/FontName/";
+// @include font-face($FontName, $FontName-path, normal, 400, no-icon, eot ttf svg);
+// ---
+
+// FontIconName import
+// $FontIconName: 'FontIconName';
+//
+// $FontIconName-path: "../sets/fonts/FontIconName/";
+// @include font-face($FontIconName, $FontIconName-path, normal, 400, icon "icons" $icons, eot ttf svg);
+// ---
+
+
+// Import custom fonts
+// @include font-face("Roboto", default, normal, 400, no-icon, eot ttf svg);
+// @include font-face("FontIcons", default, normal, 400, icon "test-icons" $icons, svg ttf);
+// @include new-icon-config("FontIcons", test, normal, 800, $icons);

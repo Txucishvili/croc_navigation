@@ -1,0 +1,45 @@
+// main: ../style.scss
+
+// For Project
+@import "_theme/setup";
+
+// Settings
+@import "_settings/mixins";
+@import "_settings/functions";
+
+// insert BODY styling
+@import "_theme/body";
+
+// insert parametrs to fullTop
+@import "_theme/top/fullTop";
+
+// Icons Fonts and displays
+// @import "_theme/_base/icons";
+// @import "_theme/_base/fonts";
+// @import "_theme/_base/font-config";
+@import "_theme/_base/base";
+
+
+// import style to insideTop
+@import "_theme/top/insideTop";
+
+// For theme
+@import "_theme/theme";
+
+// Animations import
+@import "basic/animations/animations";
+
+// Basic import
+@import "basic/basic";
+
+// Component (buttons, inputs, fields)
+@import "components/components";
+
+// Elements
+@import "elements/elements";
+
+// Widget import
+@import "widgets/widgets";
+
+// Some partails files
+@import "partails";

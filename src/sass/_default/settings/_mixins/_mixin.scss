@@ -1,0 +1,120 @@
+// main: mixins.scss
+
+// Media queries
+$break-small: 425px;
+$break-medium: 735px;
+$break-large: 1024px;
+@mixin media($media) {
+	 @if $media == iphone{
+		@media only screen and (max-width: $break-small) {
+			 @content;
+		}
+	}
+	@if $media == ipad {
+		 @media only screen and (max-width: $break-large){
+			@content;
+		}
+	}
+	@if $media == medium {
+		 @media only screen and (max-width: $break-medium){
+			@content;
+		}
+	}
+}
+
+// Clearfix
+@mixin clearfix {
+	&:after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+}
+
+// Left and Right mixin
+
+@mixin left {
+	float: left;
+}
+
+@mixin right {
+	float: right;
+}
+
+// Flex box Setup
+
+@mixin flex {
+	display: -webkit-flex;
+	display: flex;
+}
+
+// For Modeling
+@mixin align-items($param) {
+	-webkit-align-items: $param;
+	align-items: $param;
+}
+@mixin justify-content($param) {
+	-webkit-justify-content: $param;
+	justify-content: $param;
+}
+
+@mixin flex-direction($parametr) {
+	-webkit-flex-direction: $parametr;
+	flex-direction: $parametr;
+}
+
+// ----
+
+@mixin flex-align {
+	@include flex;
+	@include align-items(center);
+}
+
+@mixin flex-justify {
+	@include flex;
+	@include justify-content(center);
+}
+
+@mixin flex-all {
+	@include flex;
+	@include justify-content(center);
+	@include align-items(center);
+}
+
+@mixin flex-row {
+	@include flex-direction(row);
+}
+
+@mixin flex-col {
+	@include flex-direction(column);
+}
+
+// Position (absolute) to center
+@mixin position-center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+// Border radius
+@mixin border-radius($px) {
+	-moz-border-radius: $px;
+	-webkit-border-radius: $px;
+	border-radius: $px;
+}
+
+// Same sizes
+@mixin size($width, $height: $width) {
+	width: $width;
+	height: $height;
+}
+
+// Overflowing Texts
+@mixin text-elipsis {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+// DOM childs

@@ -1,0 +1,13 @@
+// main: functions.scss
+
+// PX to VH converter
+@function vh($number) {
+	 @return ($number / 10) + vh;
+}
+
+// PX to EM converter
+$browser-context: 16;
+
+@function em($pixel, $context: $browser-context) {
+	@return ($pixel / $context) + em;
+}

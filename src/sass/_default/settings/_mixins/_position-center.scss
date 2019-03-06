@@ -1,0 +1,8 @@
+// main: ./mixins.scss
+
+@include position-center($y: 50%, $x: 50%) {
+	position: absolute;
+	top: $y;
+	left: $x;
+	transform: translate($x, $y);
+};

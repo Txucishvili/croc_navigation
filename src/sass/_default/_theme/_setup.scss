@@ -1,0 +1,35 @@
+// main: ../style.scss
+
+$default-font-name: 'Helvetica';
+$default-font-size: 16px;
+$default-font-weight: 400;
+
+$default-font-weight-headlines: 400;
+
+// Colors
+$default-color: #0f0f0f;
+$default-background-color: #f1f1f1;
+
+// Background img setup
+$background-image_setup: false;
+
+// by one style
+$background-image-One_setup: false;
+$background-image-one-url: null;
+$background-image-one-properties: null;
+
+// by styling
+$background-image-Many_setup: false;
+$background-url: null;
+$background-repeat: null;
+$background-size: null;
+$background-position: null;
+
+// a-links
+$default-link-color: #282828;
+$default-link-color-hover: #252525;
+$default-link-font-size: 15px;
+
+// ---------------
+// Settings
+$reset-links-theme: false;

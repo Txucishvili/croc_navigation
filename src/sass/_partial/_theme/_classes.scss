@@ -1,0 +1,44 @@
+// main: theme.scss
+
+.left {
+  //@include left;
+}
+
+.right {
+  //@include right;
+}
+
+// Flex
+
+.flex {
+  @include flex;
+
+  &.-ac {
+    @include align-items(center);
+  }
+
+  &.-jc {
+    @include justify-content(center);
+  }
+}
+
+* {
+  &[attribute^="hidden"] {
+    display: none !important;
+  }
+
+}
+
+.flexi {
+  @include flex-align;
+}
+
+.flexc {
+  @include flex-all;
+}
+
+// Helpers
+
+.clearfix {
+  @include clearfix;
+}

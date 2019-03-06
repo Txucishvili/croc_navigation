@@ -1,0 +1,11 @@
+// main: ./mixins.scss
+
+@mixin reset-links-theme($reset-links-theme) {
+	@if $reset-links-theme == true {
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+	} @else if $reset-links-theme == false {
+		border: 0;
+	}
+}

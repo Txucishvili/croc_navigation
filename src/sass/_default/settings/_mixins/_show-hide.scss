@@ -1,0 +1,13 @@
+// main: ./mixins.scss
+
+
+
+@mixin show-hide($value) {
+	@if $value == true or $value == 'show' {
+		@content;
+	}
+
+	@else if $value == false or $value == 'hide' {
+		// here is nothing 
+	}
+}

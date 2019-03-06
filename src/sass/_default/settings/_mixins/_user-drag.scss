@@ -1,0 +1,6 @@
+// main: mixins.scss
+
+// User Select
+@mixin dragable($vars) {
+  -webkit-user-drag: $vars;
+}

@@ -1,0 +1,57 @@
+@keyframes placeholder {
+  0% { background-position: -600px 0 }
+  100% { background-position: 600px 0 }
+}
+
+.frame-loader {
+  .animate-frame {
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeholder;
+    animation-timing-function: linear;
+    background: rgba($oc-black, .3);
+    background: linear-gradient(to right, rgba($oc-black, .2) 8%, rgba($oc-black, .2) 18%, rgba($oc-black, .1));
+    background-size: 1200px 100px;
+    width: 100%;
+    margin: 5px 0 5px 0;
+    border-radius: 3px
+  }
+
+  .line {
+    font-size: em(0);
+    border-bottom: 1px solid rgba($oc-black, .35);
+    @include flex;
+    @include align-items(center);
+    @include justify-content(space-between);
+    height: 40px !important;
+    padding: 0 20px;
+
+    .name {
+      width: 145px;
+      height: 15px;
+      display: block;
+      background-color: rgba($color-dark-green-2, .3);
+      border-radius: 100px;
+    }
+
+    .count {
+      width: 35px;
+      height: 15px;
+      margin-left: 10px;
+      border-radius: 25px;
+      background-color: rgba($color-dark-green-2, .3);
+    }
+
+    &:hover {
+      .count {
+        background-color: lighten($color-light-green, 5.7%);
+      }
+
+      background-color: lighten($color-light-green, 5.7%);
+    }
+  }
+  &.navLoader  {
+    width: 350px;
+  }
+}
