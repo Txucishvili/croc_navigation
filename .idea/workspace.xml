@@ -2,49 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ccc70e28-d0e3-40c8-bfd7-78ba215cf6ee" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dist/img/SVG/1x/Asset 1-8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dist/img/SVG/1x/list.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dist/img/SVG/1x/logo-section-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dist/img/SVG/1x/map-view.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dist/img/SVG/Asset 1.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dist/img/SVG/Asset 12.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dist/img/SVG/Asset 13.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dist/img/SVG/SVG/Asset 1.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dist/img/SVG/SVG/Asset 2.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dist/img/SVG/SVG/Asset 5.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dist/img/SVG/SVG/arrow-left.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dist/img/SVG/SVG/arrow-right.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dist/img/SVG/SVG/ew_c.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dist/img/SVG/SVG/menu-btn.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dist/img/SVG/SVG/no-avatar.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dist/img/SVG/cloud-1.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dist/img/SVG/cloud-2.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dist/img/SVG/cloud-3.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dist/img/SVG/mounty-1.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dist/img/SVG/mounty-2.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dist/img/SVG/mounty-3.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dist/img/SVG/sun.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dist/img/SVG/weather-cloud.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dist/img/ew_c.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dist/img/ico/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dist/img/logo-2.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dist/img/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dist/img/map-view.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dist/img/menu-btn.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dist/img/no-avatar.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dist/img/test-area/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dist/js/app.bundle.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/dist/js/app.bundle.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dist/sets/fonts/bpg-le-studio-02-webfont/bpg-le-studio-02-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dist/sets/fonts/bpg-le-studio-02-webfont/bpg-le-studio-02-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dist/sets/fonts/bpg-le-studio-02-webfont/bpg-le-studio-02-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dist/sets/fonts/bpg-le-studio-02-webfont/bpg-le-studio-02-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dist/sets/fonts/bpg-le-studio-02-webfont/bpg-le-studio-02-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dist/sets/fonts/bpg-le-studio-02-webfont/bpg_le_studio_02_caps.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dist/sets/fonts/icomoon/icomoon.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dist/sets/fonts/icomoon/icomoon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dist/sets/fonts/icomoon/icomoon.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dist/sets/fonts/icomoon/icomoon.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/app.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -81,8 +39,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="502">
+              <caret line="84" column="2" selection-start-line="84" selection-start-column="2" selection-end-line="84" selection-end-column="2" />
+              <folding>
+                <element signature="n#!!block;n#buildTemplate#0" />
+                <element signature="e#910#1722#0" />
+                <element signature="e#1766#1791#0" />
+                <element signature="e#1862#2073#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -155,7 +119,14 @@
               <item name="category-crocobet" type="b2602c69:ProjectViewProjectNode" />
               <item name="category-crocobet" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="sass" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="category-crocobet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="category-crocobet" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sass" type="462c0819:PsiDirectoryNode" />
+              <item name="_partial" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -215,12 +186,12 @@
       <option name="presentableId" value="Default" />
       <updated>1551775526556</updated>
       <workItem from="1551775529439" duration="3135000" />
-      <workItem from="1551779896241" duration="28065000" />
+      <workItem from="1551779896241" duration="28366000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31200000" />
+    <option name="totallyTimeSpent" value="31501000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="970" extended-state="0" />
@@ -433,8 +404,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="502">
+          <caret line="84" column="2" selection-start-line="84" selection-start-column="2" selection-end-line="84" selection-end-column="2" />
+          <folding>
+            <element signature="n#!!block;n#buildTemplate#0" />
+            <element signature="e#910#1722#0" />
+            <element signature="e#1766#1791#0" />
+            <element signature="e#1862#2073#0" />
+          </folding>
         </state>
       </provider>
     </entry>
